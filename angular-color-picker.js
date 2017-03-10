@@ -171,8 +171,8 @@
                             $scope.color = ngModel.$viewValue;
                             $scope.hsv = hexRgbToHsv($scope.color);
                             $scope.colorCursor = {
-                                x: $scope.hsv.s * 200,
-                                y: (1 - $scope.hsv.v) * 200
+                                x: $scope.hsv.s * 100,
+                                y: (1 - $scope.hsv.v) * 100
                             };
                         } else {
                             $scope.color = null;
@@ -181,7 +181,7 @@
                         }
 
                         $scope.hueBackgroundColor = hsvToHexRgb($scope.hsv.h, 1, 1);
-                        $scope.hueCursor = $scope.hsv.h * 200;
+                        $scope.hueCursor = $scope.hsv.h * 100;
                     };
                 }
 
